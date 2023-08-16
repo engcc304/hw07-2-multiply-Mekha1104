@@ -80,25 +80,25 @@
 int main() {
     int start, end;
 
-    printf("Start: ");
+    printf("Start :\n");
     scanf("%d", &start);
 
-    printf("End: ");
+    printf("End :\n");
     scanf("%d", &end);
 
-
-
-    while (start <= end) {
+    int current = start;
+    
+    while (current <= end) {
         int multiplier = 1;
-        printf("Output :\n", start);
+        printf("Output:\n");
 
         while (multiplier <= 9) {
-            printf("%d x %d = %d\n", start, multiplier, start * multiplier);
+            printf("%d x %d = %d\n", current, multiplier, current * multiplier);
             multiplier++;
         }
 
         printf("\n");
-        start++;
+        current++;
     }
 
     return 0;
