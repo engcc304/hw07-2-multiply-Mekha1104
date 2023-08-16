@@ -82,23 +82,20 @@ int main() {
 
     printf("Start : ");
     scanf("%d", &start);
-
     printf("End : ");
     scanf("%d", &end);
 
-    int current = start;
-    
-    while (current <= end) {
-        int multiplier = 1;
-        printf("Output:\n");
+    int i = 1; 
 
-        while (multiplier <= 9) {
-            printf("%d x %d = %d\n", current, multiplier, current * multiplier);
-            multiplier++;
+    while (start <= end) {
+        int j = 1; 
+        while (j <= 9) {
+            printf("%d x %d = %d\n", start, j, start * j);
+            j++;
         }
-
         printf("\n");
-        current++;
+        start++;
+        i++;
     }
 
     return 0;
