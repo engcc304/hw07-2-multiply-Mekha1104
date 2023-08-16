@@ -80,17 +80,17 @@
 int main() {
     int start, end;
 
-    printf("Enter the starting number: ");
+    printf("Start: ");
     scanf("%d", &start);
 
-    printf("Enter the ending number: ");
+    printf("End: ");
     scanf("%d", &end);
 
-    printf("Multiplication Tables from %d to %d:\n", start, end);
+
 
     while (start <= end) {
         int multiplier = 1;
-        printf("Multiplication Table of %d:\n", start);
+        printf("Output :\n", start);
 
         while (multiplier <= 9) {
             printf("%d x %d = %d\n", start, multiplier, start * multiplier);
