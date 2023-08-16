@@ -75,27 +75,30 @@
         6 x 9 = 54
 
 */
-#include <iostream>
-using namespace std;
+#include <stdio.h>
 
 int main() {
     int start, end;
-    
-    cout << "Start :" << endl;
-    cin >> start;
 
-    cout << "End :" << endl;
-    cin >> end;
+    printf("Enter the starting number: ");
+    scanf("%d", &start);
 
-    int i = start;
+    printf("Enter the ending number: ");
+    scanf("%d", &end);
 
-    while (i <= end) {
-        int j = 1;
-        while (j <= 9) {
-            cout << i << " x " << j << " = " << (i * j) << endl;
-            ++j;
+    printf("Multiplication Tables from %d to %d:\n", start, end);
+
+    while (start <= end) {
+        int multiplier = 1;
+        printf("Multiplication Table of %d:\n", start);
+
+        while (multiplier <= 9) {
+            printf("%d x %d = %d\n", start, multiplier, start * multiplier);
+            multiplier++;
         }
-        ++i;
+
+        printf("\n");
+        start++;
     }
 
     return 0;
