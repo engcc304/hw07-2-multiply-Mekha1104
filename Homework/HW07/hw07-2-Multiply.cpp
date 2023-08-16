@@ -80,10 +80,10 @@
 int main() {
     int start, end;
 
-    printf("Start :\n");
+    printf("Start : ");
     scanf("%d", &start);
 
-    printf("End :\n");
+    printf("End : ");
     scanf("%d", &end);
 
     int current = start;
